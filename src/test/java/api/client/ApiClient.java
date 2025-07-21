@@ -22,6 +22,11 @@ public class ApiClient {
     private static final Logger logger = LoggerFactory.getLogger(ApiClient.class);
     private final ObjectMapper defaultMapper = new ObjectMapper();
     private final ObjectMapper nonNullMapper = new ObjectMapper().setSerializationInclusion(JsonInclude.Include.NON_NULL);
+    private final String baseUrl;
+
+    public ApiClient(String baseUrl) {
+        this.baseUrl = baseUrl;
+    }
 
     private String convertToJson(Object obj) {
         try {
