@@ -1,10 +1,10 @@
-package tests.helpers;
+package util;
 
-import dto.datahubs.*;
-import dto.metrics.DateBusinessEntry;
-import dto.metrics.QualityMetricData;
-import dto.metrics.QualityMetricReadRequest;
-import dto.metrics.QualityMetricWriteRequest;
+import api.dto.datahubs.*;
+import api.dto.metrics.DateBusinessEntry;
+import api.dto.metrics.QualityMetricData;
+import api.dto.metrics.QualityMetricReadRequest;
+import api.dto.metrics.QualityMetricWriteRequest;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
 
 public class TestDataFactory {
 
-    public static <T>ApplicationRequest<T> app(List<T> modules) {
+    public static <T> ApplicationRequest<T> app(List<T> modules) {
         ApplicationRequest<T> req = new ApplicationRequest<>();
         req.setAppClass("application");
         req.setModules(modules);

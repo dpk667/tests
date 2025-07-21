@@ -1,4 +1,4 @@
-package dto.metrics;
+package api.dto.metrics;
 
 public class QualityMetricData {
     private String codeMetric;

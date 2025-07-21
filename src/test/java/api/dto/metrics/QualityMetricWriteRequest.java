@@ -1,4 +1,4 @@
-package dto.metrics;
+package api.dto.metrics;
 
 import java.util.List;
 

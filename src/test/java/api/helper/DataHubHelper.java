@@ -1,17 +1,22 @@
-package tests.helpers;
+package api.helper;
 
+import api.client.ApiClient;
+import api.dto.datahubs.ApplicationRequest;
+import api.dto.datahubs.DataHub;
+import api.dto.datahubs.Meta;
+import api.dto.datahubs.ModuleWithMeta;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import dto.datahubs.*;
-import dto.response.DataHubDescriptionResponse;
+import api.dto.response.DataHubDescriptionResponse;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
-import tests.base.BaseTest;
-import tests.utils.AssertionsHelper;
+import base.BaseTest;
+import api.assertion.AssertionsHelper;
+import util.TestDataFactory;
 
 import java.io.IOException;
 import java.util.List;

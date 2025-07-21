@@ -1,4 +1,4 @@
-package dto.response;
+package api.dto.response;
 
 import java.util.List;
 

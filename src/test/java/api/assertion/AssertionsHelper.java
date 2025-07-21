@@ -1,4 +1,4 @@
-package tests.utils;
+package api.assertion;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;

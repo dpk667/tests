@@ -1,7 +1,7 @@
-package tests.api;
+package api.tests;
 
-import dto.datahubs.ApplicationRequest;
-import dto.datahubs.ModuleWithMeta;
+import api.dto.datahubs.ApplicationRequest;
+import api.dto.datahubs.ModuleWithMeta;
 import io.qameta.allure.Allure;
 import io.qameta.allure.TmsLink;
 import io.restassured.response.Response;
@@ -9,8 +9,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
-import tests.base.BaseTest;
-import tests.helpers.DataHubHelper;
+import base.BaseTest;
+import api.helper.DataHubHelper;
 
 import java.util.HashMap;
 import java.util.List;
@@ -19,7 +19,7 @@ import java.util.Map;
 import static constants.ApiEndpoints.METADATA_OWNER;
 import static constants.ApiEndpoints.V1_DH_DESCRIPTION;
 import static constants.TestConstants.AQA_MODULE_ID_1;
-import static tests.helpers.TestDataFactory.generateUniqueId;
+import static util.TestDataFactory.generateUniqueId;
 
 public class TechModulesTest extends BaseTest {
 

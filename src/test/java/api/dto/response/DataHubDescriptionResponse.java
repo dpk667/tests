@@ -1,4 +1,4 @@
-package dto.response;
+package api.dto.response;
 
 public class DataHubDescriptionResponse {
     private String guid;

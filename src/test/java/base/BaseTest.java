@@ -1,9 +1,9 @@
-package tests.base;
+package base;
 
-import tests.helpers.ApiClient;
+import api.client.ApiClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import tests.utils.AssertionsHelper;
+import api.assertion.AssertionsHelper;
 
 public abstract class BaseTest {
 

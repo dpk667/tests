@@ -1,4 +1,4 @@
-package dto.datahubs;
+package api.dto.datahubs;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
