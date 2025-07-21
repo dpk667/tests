@@ -88,4 +88,12 @@ public class AssertionsHelper {
             throw  new RuntimeException("Ошибка при сравнении JSON " + e.getMessage(), e);
         }
     }
+
+    @Step("Проверка, что поле moduleOwner = {expectedOwner}")
+    public void assertModuleOwner(Response response, String expectedOwner) {
+        String actualOwner = response.jsonPath().getString("datahubList[0].moduleOwner");
+        Assertions.assertEquals(expectedOwner.toLowerCase(), actualOwner.toLowerCase(),
+                "Поле moduleOwner не совпадает с ожидаемым значением");
+    }
+
 }

@@ -48,5 +48,7 @@ public class TechModulesTest extends BaseTest {
         Map<String, String> descriptionParams = Map.of("datahubGUID", guid);
         Response descriptionResponse = apiClient.get(V1_DH_DESCRIPTION, descriptionParams);
         assertionsHelper.validateSuccessResponse(descriptionResponse, "проверка описания ДХ");
+
+        assertionsHelper.assertModuleOwner(descriptionResponse, AQA_MODULE_ID_1);
     }
 }
